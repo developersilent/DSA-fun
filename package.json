@@ -1,0 +1,14 @@
+{
+  "name": "dsa-fun",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "array": "bun /src/arrays/array.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

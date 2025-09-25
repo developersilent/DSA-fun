@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "array": "bun /src/arrays/array.js"
+    "array": "bun /src/arrays/array.js",
+    "prob": "bun /src/problems/counter.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"

@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "array": "bun /src/arrays/array.js",
-    "prob": "bun /src/problems/counter.ts"
+    "prob": "bun /src/problems/counter.ts",
+    "singly:ll": "bun /src/linkedlist/singly.js"
   },
   "devDependencies": {
     "@types/bun": "latest"

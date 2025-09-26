@@ -11,9 +11,7 @@ class SArray {
     }
   }
   push(data) {
-    let i = 0;
-    while (i < this.length) i++;
-    this.data[i] = data;
+    this.data[this.length] = data;
     this.length++;
     return this.data;
   }
@@ -61,8 +59,12 @@ class SArray {
     this.length = 0;
     return this.data;
   }
+  map(callback) {
+    for (let i = 0; i < this.length; i++) {
+      callback(this.data[i], i, this.data);
+    }
+  }
 }
-
 const a = new SArray();
 a.push(1);
 a.push(2);
@@ -70,8 +72,7 @@ a.push(3);
 a.push(4);
 // [1,2,3]
 // 0,1,2
-a.insert(1, 11);
-a.insert(4, 10);
-console.log(a.data, a.length);
-a.clear();
-console.log(a.data, a.length);
+
+a.map(function (d, i) {
+  console.log(d, i);
+});
